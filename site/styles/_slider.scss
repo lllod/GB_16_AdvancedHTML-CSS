@@ -1,0 +1,36 @@
+@import "vars";
+@import "mixins";
+
+.slider {
+  height: 777px;
+  background: rgb(247, 247, 247);
+  border: 1px solid rgb(234, 234, 234);
+
+  &__carousel {
+    @include flex-center;
+    justify-content: space-between;
+    padding-top: 11px;
+
+    &__prev {
+      @include width-height(47px, 47px);
+      @include flex-center;
+      background: $sliderColor;
+    }
+
+    &__prev:hover svg path,
+    &__prev:hover {
+      fill: $pinkColorSite;
+    }
+
+    &__next {
+      @include width-height(47px, 47px);
+      @include flex-center;
+      background: $sliderColor;
+    }
+
+    &__next:hover svg path,
+    &__next:hover {
+      fill: $pinkColorSite;
+    }
+  }
+}

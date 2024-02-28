@@ -1,0 +1,69 @@
+@import "vars";
+@import "mixins";
+
+.reviews-and-subscribe {
+  height: 448px;
+  background: rgba(240 240 240) url("../img/footer-back.png") no-repeat;
+  display: flex;
+  justify-content: center;
+
+  .reviews {
+    @include flex-center-column;
+    @include reviews-and-subscribe_mp(359px, 97px);
+    gap: 30px;
+
+    .text {
+      color: $darkColorSite;
+      @include font(20px, 400);
+      text-align: center;
+    }
+  }
+
+  .subscribe {
+    @include flex-center-column;
+    @include reviews-and-subscribe_mp(557px, 150px);
+    line-height: 167%;
+
+    .title {
+      color: $darkColorSite;
+      @include font(24px, 700);
+    }
+
+    .sub-title {
+      color: $darkColorSite;
+      @include font(18px, 400);
+      margin-bottom: 32px;
+    }
+
+    .form {
+      display: flex;
+    }
+
+    .subscribe__email {
+      background: $whiteColorSite;
+      @include width-height(256px, 49px);
+      border: 0;
+      border-radius: 8% 0 0 8% / 50%;
+    }
+
+    .subscribe__email::placeholder {
+      color: $darkColorSite;
+      @include font(14px, 400);
+      opacity: 0.67;
+      padding-left: 22px;
+    }
+
+    .subscribe__btn {
+      @include width-height(100px, 49px);
+      background: $pinkColorSite;
+      border-radius: 0 20% 20% 0 / 50% 50%;
+      @include flex-center;
+
+      .text {
+        color: $whiteColorSite;
+        @include font(14px, 400);
+        text-align: center;
+      }
+    }
+  }
+}

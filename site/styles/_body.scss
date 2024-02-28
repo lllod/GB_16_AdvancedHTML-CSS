@@ -1,0 +1,19 @@
+@import "vars";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+        padding-left: calc(50% - $widthSite / 2);
+        padding-right: calc(50% - $widthSite / 2);
+}

@@ -1,0 +1,29 @@
+@import "vars";
+
+.main-head {
+  height: 75px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: $darkColorSite;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .left_icons {
+    display: flex;
+    gap: 41px;
+    align-items: flex-end;
+  }
+
+  .search {
+    height: 26px;
+  }
+
+  .right_icons {
+    display: flex;
+    gap: 33px;
+    align-items: flex-end;
+  }
+}

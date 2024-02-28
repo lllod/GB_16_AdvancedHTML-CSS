@@ -1,0 +1,29 @@
+@import "vars";
+@import "mixins";
+
+.plus {
+  background: $darkColorSite;
+  height: 341px;
+
+  .content {
+    @include flex-center;
+    gap: 30px;
+
+    .block {
+      margin: 104px 0;
+      width: 360px;
+      @include flex-center-column;
+
+      .title {
+        color: $whiteColorSite;
+        @include font(20px, 400);
+        margin: 25px 0 16px;
+      }
+
+      .subtitle {
+        color: $whiteColorSite;
+        @include font(14px, 300);
+      }
+    }
+  }
+}

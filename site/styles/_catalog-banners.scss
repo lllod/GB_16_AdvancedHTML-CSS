@@ -1,0 +1,47 @@
+@import "vars";
+@import "mixins";
+
+.catalog-banners {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 65px 0 96px;
+
+  .banner {
+    position: relative;
+  }
+
+  img {
+    @include width-height(100%, 100%);
+  }
+
+  .text {
+    position: absolute;
+    @include width-height(100%, 100%);
+    top: 0;
+    left: 0;
+    @include flex-center-column;
+    justify-content: center;
+
+    .white_text {
+      @include font(16px, 400);
+      color: $whiteColorSite;
+    }
+
+    .red_text {
+      @include font(24px, 700);
+      color: $pinkColorSite;
+      white-space: nowrap;
+    }
+  }
+
+  .big_banner {
+    position: relative;
+    grid-column: 1 / -1;
+
+    img {
+      object-fit: cover;
+      object-position: bottom;
+    }
+  }
+}

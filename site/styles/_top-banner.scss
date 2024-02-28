@@ -1,0 +1,45 @@
+@import "vars";
+@import "mixins";
+
+.top-banner {
+  height: 764px;
+  background: rgb(241, 228, 230);
+  @include flex-center;
+  justify-content: space-between;
+  gap: 60px;
+
+  .title {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+    .rectangle {
+      @include width-height(12px, 92px);
+      background: $pinkColorSite;
+    }
+
+    .img {
+      width: auto;
+    }
+
+    .text {
+      .text_main {
+        @include font(48px, 900);
+      }
+
+      .text_black {
+        @include font(32px, 700);
+      }
+
+      .text_red {
+        @include font(32px, 700);
+        color: $pinkColorSite;
+      }
+    }
+  }
+}
+
+.center-top_banner {
+  padding-left: calc(50% - $widthTopBanner / 2);
+  padding-right: calc(50% - $widthTopBanner / 2);
+}

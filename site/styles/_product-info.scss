@@ -1,0 +1,12 @@
+@import "vars";
+@import "mixins";
+
+.product-center {
+  margin-left: calc(50% - $widthSite / 2);
+  margin-right: calc(50% - $widthSite / 2);
+}
+
+.product-info {
+  border: 10px solid rgb(234, 234, 234);
+  @include width-height(1140px, 601px);
+}
