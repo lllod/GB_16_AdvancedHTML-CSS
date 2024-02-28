@@ -13,8 +13,10 @@
   }
 
   &__menu {
-    @include font(14px, 300);
-    color: rgb(99, 99, 99);
+    &__link {
+      @include font(14px, 300);
+      color: $greyColorSite;
+    }
 
     &__red-text {
       @include font(14px, 700);

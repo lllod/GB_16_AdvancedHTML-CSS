@@ -94,7 +94,7 @@
       .sub-title {
         @include font(14px, 300);
         text-align: left;
-        color: rgb(93, 93, 93);
+        color: $greyColorSite;
         padding-bottom: 18px;
       }
 

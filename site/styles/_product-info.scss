@@ -7,6 +7,81 @@
 }
 
 .product-info {
-  border: 10px solid rgb(234, 234, 234);
+  border: 1px solid rgb(234, 234, 234);
   @include width-height(1140px, 601px);
+  position: relative;
+  top: -65px;
+
+  &__content {
+    padding-top: 65px;
+    @include flex-center-column;
+
+    &__category {
+      @include flex-center-column;
+      gap: 12px;
+
+      &__text {
+        @include font(14px, 300);
+        color: $pinkColorSite;
+      }
+
+      &__rectangle {
+        @include width-height(63px, 3px);
+        background: $pinkColorSite;
+      }
+    }
+
+    &__title {
+      @include font(18px, 300);
+      color: rgb(77, 77, 77);
+      padding-top: 12px;
+    }
+
+    &__description {
+      @include font(14px, 300);
+      color: $greyColorSite;
+      width: 555px;
+      text-align: center;
+      padding-top: 48px;
+    }
+
+    &__cost {
+      padding-top: 32px;
+      @include font(24px, 300);
+      color: $pinkColorSite;
+    }
+
+    &__select {
+      @include flex-center;
+      gap: 23px;
+      padding-bottom: 48px;
+
+      &__item {
+        @include font(14px, 400);
+        color: $greyColorSite;
+        padding-top: 130px;
+      }
+    }
+
+    &__cart {
+      @include width-height(212px, 48px);
+      border: 1px solid $pinkColorSite;
+      @include flex-center;
+      justify-content: space-evenly;
+      margin-bottom: 64px;
+
+      &__text {
+        @include font(16px, 400);
+        color: $pinkColorSite;
+      }
+    }
+
+    &__cart:hover svg path,
+    &__cart:hover p,
+    &__cart:hover {
+      background: $pinkColorSite;
+      fill: $whiteColorSite;
+      color: $whiteColorSite;
+    }
+  }
 }
