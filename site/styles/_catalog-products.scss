@@ -1,62 +1,55 @@
 @import "vars";
 @import "mixins";
-@import "see-all";
 
-.fetured-items {
+.catalog-products {
   @include flex-center-column;
-  margin-bottom: 95px;
+  margin-bottom: 48px;
 
-  .text {
-    @include flex-center-column;
-    align-items: normal;
-    gap: 6px;
-    text-align: center;
-    padding-bottom: 48px;
-
-    .title {
-      color: $darkColorSite;
-      @include font(30px, 400);
-    }
-
-    .sub-title {
-      color: rgb(159, 159, 159);
-      @include font(14px, 400);
-    }
-  }
-
-  .banners {
+  .products {
     display: grid;
     grid-gap: 25px 30px;
     grid-template-columns: repeat(3, 1fr);
 
-    .banner {
+    .product {
       .img1 {
-        @include products-list-img(url("../img/banner1.png"));
+        @include products-list-img(url("../img/catalog/product1.png"));
       }
 
       .img2 {
-        @include products-list-img(url("../img/banner2.png"));
-        background: url("../img/banner2.png") center no-repeat, rgb(247, 228, 226);
+        @include products-list-img(url("../img/catalog/product2.png"));
+        background: url("../img/catalog/product2.png") center no-repeat, rgb(247, 228, 226);
       }
 
       .img3 {
-        @include products-list-img(url("../img/banner3.png"));
+        @include products-list-img(url("../img/catalog/product3.png"));
       }
 
       .img4 {
-        @include products-list-img(url("../img/banner4.png"));
+        @include products-list-img(url("../img/catalog/product4.png"));
       }
 
       .img5 {
-        @include products-list-img(url("../img/banner5.png"));
+        @include products-list-img(url("../img/catalog/product5.png"));
       }
 
       .img6 {
-        @include products-list-img(url("../img/banner6.png"));
+        @include products-list-img(url("../img/catalog/product6.png"));
       }
 
-      .fetured_items__img {
-        .fetured_items__hover-block {
+      .img7 {
+        @include products-list-img(url("../img/catalog/product7.png"));
+      }
+
+      .img8 {
+        @include products-list-img(url("../img/catalog/product8.png"));
+      }
+
+      .img9 {
+        @include products-list-img(url("../img/catalog/product9.png"));
+      }
+
+      .catalog-products__img {
+        .catalog-products__hover-block {
           display: none;
 
           .box {
@@ -73,8 +66,8 @@
         }
       }
 
-      .fetured_items__img:hover {
-        .fetured_items__hover-block {
+      .catalog-products__img:hover {
+        .catalog-products__hover-block {
           box-shadow: inset 0 0 0 1000px rgba(58, 56, 56, 0.86);
           @include flex-center;
           @include width-height(360px, 420px);
@@ -89,6 +82,7 @@
         @include font(13px, 400);
         text-align: left;
         padding-bottom: 13px;
+        color: $darkColorSite;
       }
 
       .sub-title {

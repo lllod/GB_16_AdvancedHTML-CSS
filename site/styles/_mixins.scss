@@ -27,7 +27,7 @@
   font-weight: $weight;
 }
 
-@mixin fetured-items-img($img-background) {
+@mixin products-list-img($img-background) {
   background: $img-background;
   width: 360px;
   height: 420px;
