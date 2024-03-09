@@ -1,0 +1,130 @@
+@import "vars";
+@import "mixins";
+
+.cart-content {
+  display: flex;
+  gap: 128px;
+  padding-top: 96px;
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    width: 652px;
+
+    &__cards-list {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      &__card {
+        @include width-height(652px, 306px);
+        -webkit-box-shadow: 8px 8px 15px 4px rgba(0, 0, 0, 0.15);
+        box-shadow: 8px 8px 15px 4px rgba(0, 0, 0, 0.15);
+        display: flex;
+        gap: 31px;
+
+        .card-img {
+          @include width-height(262px, 100%);
+        }
+
+        .card-data {
+          display: flex;
+          flex-direction: column;
+          gap: 42px;
+          @include width-height(262px, 222px);
+          padding-top: 22px;
+
+          &__title {
+            color: $darkColorSite;
+            @include font(24px, 400);
+            line-height: 29px;
+            letter-spacing: 0;
+            word-spacing: 8px;
+          }
+
+
+          &__parameters {
+            color: $greyColorSite;
+            @include font(22px, 400);
+            line-height: 26px;
+            letter-spacing: 0;
+
+            .pink {
+              color: $pinkColorSite;
+            }
+
+            .light-grey {
+              color: $greyColorDropdownMenu;
+            }
+
+            .quantity {
+              .quantity-form {
+                .quantity-input {
+                  @include width-height(44px, 25px);
+                  margin-left: 24px;
+                  border: 1px solid rgb(234, 234, 234);
+                  background: $whiteColorSite;
+                  text-align: center;
+                  @include font(18px, 400);
+                  color: $greyColorDropdownMenu;
+                }
+              }
+            }
+          }
+        }
+
+        .card-delete {
+          padding-left: 26px;
+          padding-top: 28px;
+          @include width-height(18px, 18px);
+        }
+
+        .card-delete:hover svg path,
+        .card-delete:hover {
+          fill: $pinkColorSite;
+        }
+      }
+    }
+
+    &__cards-nav {
+      display: flex;
+      justify-content: space-between;
+
+      .btn {
+        height: 50px;
+        border: 1px solid rgb(164, 164, 164);
+
+        &__text {
+          @include font(14px, 300);
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+      }
+
+      .btn:hover, &__text:hover {
+        background: $pinkColorSite;
+        border: 1px solid $pinkColorSite;
+        color: $whiteColorSite;
+      }
+    }
+
+  }
+
+  &__forms {
+    padding-top: 17px;
+
+    &__address-form {
+      @include width-height(360px, 272px);
+
+      fieldset {
+        border: 0 none;
+      }
+
+      &__title {
+        @include font(16px, 300);
+        color: $darkColorSite;
+      }
+    }
+  }
+}
