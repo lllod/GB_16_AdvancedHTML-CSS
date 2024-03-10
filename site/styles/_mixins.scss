@@ -32,3 +32,9 @@
   width: 360px;
   height: 420px;
 }
+
+@mixin btn_hover {
+  background: $pinkColorSite;
+  border: 1px solid $pinkColorSite;
+  color: $whiteColorSite;
+}

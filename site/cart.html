@@ -119,25 +119,41 @@
         </div>
         <div class="cart-content__forms">
             <div class="cart-content__forms__address-form">
-                <form action="" method="get" class="delivery-address">
-                    <fieldset>
+                <form action="" method="get">
+                    <fieldset class="delivery-address">
                         <legend class="cart-content__forms__address-form__title">
                             SHIPPING ADDRESS
                         </legend>
-                        <label class="hidden" for="city">
-                            <input id="city" name="city" type="text">
-                        </label>
-                        <label for="state">
-                            <input id="state" name="state" type="text">
-                        </label>
-                        <label for="postcode">
-                            <input id="postcode" name="postcode" type="number">
-                        </label>
-                        <button type="submit">GET A QUOTE</button>
+                        <div class="delivery-address__labels">
+                            <label class="delivery-label" for="city">
+                                <input class="delivery-input" id="city" name="city" type="text" placeholder="City">
+                            </label>
+                            <label class="delivery-label" for="state">
+                                <input class="delivery-input" id="state" name="state" type="text" placeholder="State">
+                            </label>
+                            <label class="delivery-label" for="postcode">
+                                <input class="delivery-input" id="postcode" name="postcode" type="number"
+                                       placeholder="Postcode/Zip">
+                            </label>
+                        </div>
+                        <button class="delivery-btn" type="submit">GET A QUOTE</button>
                     </fieldset>
                 </form>
             </div>
-            <div class="cart-content__total-info"></div>
+            <div class="cart-content__forms__total-info">
+                <div class="cart-content__forms__total-info__sub-text">
+                    <p class="text">SUB TOTAL</p>
+                    <p class="price">$900</p>
+                </div>
+                <div class="cart-content__forms__total-info__grand-text">
+                    <p class="text">GRAND TOTAL</p>
+                    <p class="price">$900</p>
+                </div>
+                <div class="cart-content__forms__total-info__line"></div>
+                <form action="" method="get" class="cart-content__forms__total-info__form">
+                    <button class="btn" type="submit">PROCEED TO CHECKOUT</button>
+                </form>
+            </div>
         </div>
     </div>
     <div class="reviews-and-subscribe">

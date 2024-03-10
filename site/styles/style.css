@@ -841,6 +841,7 @@ summary::-webkit-details-marker {
 .cart-content__cards__cards-list__card {
   width: 652px;
   height: 306px;
+  background: rgb(255, 255, 255);
   -webkit-box-shadow: 8px 8px 15px 4px rgba(0, 0, 0, 0.15);
   box-shadow: 8px 8px 15px 4px rgba(0, 0, 0, 0.15);
   display: flex;
@@ -926,13 +927,100 @@ summary::-webkit-details-marker {
   width: 360px;
   height: 272px;
 }
-.cart-content__forms__address-form fieldset {
+.cart-content__forms__address-form .delivery-address {
   border: 0 none;
+}
+.cart-content__forms__address-form .delivery-address .delivery-address__labels {
+  padding-top: 20px;
+  padding-bottom: 23px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cart-content__forms__address-form .delivery-address .delivery-address__labels .delivery-input {
+  width: 100%;
+  height: 45px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(164, 164, 164);
+  font-size: 13px;
+  font-weight: 300;
+  color: rgb(34, 34, 34);
+  padding-left: 17px;
+}
+.cart-content__forms__address-form .delivery-address .delivery-address__labels .delivery-input::placeholder {
+  color: rgb(177, 177, 177);
+}
+.cart-content__forms__address-form .delivery-address .delivery-btn {
+  padding: 10px 14px 12px 15px;
+  font-size: 11px;
+  font-weight: 300;
+  color: rgb(74, 74, 74);
+  border: 1px solid rgb(164, 164, 164);
+}
+.cart-content__forms__address-form .delivery-address .delivery-btn:hover {
+  background: rgb(241, 109, 127);
+  border: 1px solid rgb(241, 109, 127);
+  color: rgb(255, 255, 255);
 }
 .cart-content__forms__address-form__title {
   font-size: 16px;
   font-weight: 300;
   color: rgb(34, 34, 34);
+}
+.cart-content__forms__total-info {
+  margin-top: 57px;
+  padding-top: 39px;
+  background: rgb(245, 243, 243);
+  display: flex;
+  flex-direction: column;
+}
+.cart-content__forms__total-info__sub-text {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 34px;
+  gap: 25px;
+  font-size: 11px;
+  font-weight: 400;
+  color: rgb(74, 74, 74);
+}
+.cart-content__forms__total-info__grand-text {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 37px;
+  gap: 25px;
+  padding-top: 12px;
+}
+.cart-content__forms__total-info__grand-text .text {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgb(34, 34, 34);
+}
+.cart-content__forms__total-info__grand-text .price {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(241, 109, 127);
+}
+.cart-content__forms__total-info__line {
+  background: rgb(226, 226, 226);
+  width: 275px;
+  height: 1px;
+  margin: 21px 42px 17px 43px;
+}
+.cart-content__forms__total-info__form {
+  margin-left: 44px;
+  margin-bottom: 42px;
+}
+.cart-content__forms__total-info__form .btn {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(164, 164, 164);
+  padding: 15px 43px 16px 41px;
+}
+.cart-content__forms__total-info__form .btn:hover {
+  background: rgb(241, 109, 127);
+  border: 1px solid rgb(241, 109, 127);
+  color: rgb(255, 255, 255);
 }
 
 /*# sourceMappingURL=style.css.map */
