@@ -26,8 +26,9 @@
 
   .banners {
     display: grid;
-    grid-gap: 25px 30px;
+    grid-gap: 30px;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 
     .banner {
       .img1 {
@@ -103,6 +104,16 @@
         @include font(16px, 400);
         text-align: left;
       }
+    }
+  }
+}
+
+@media(min-width: 768px) and (max-width: 1024px) {
+  .fetured-items {
+    .banners {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 16px;
     }
   }
 }

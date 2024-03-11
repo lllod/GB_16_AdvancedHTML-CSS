@@ -15,6 +15,12 @@ a {
   padding-right: calc(50% - 570px);
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 368px);
+    padding-right: calc(50% - 368px);
+  }
+}
 .main-head {
   height: 75px;
   left: 0;
@@ -41,26 +47,29 @@ a {
 }
 
 .top-banner {
-  height: 764px;
   background: rgb(241, 228, 230);
   display: flex;
   align-items: center;
   justify-content: center;
-  justify-content: space-between;
-  gap: 60px;
+  gap: 64px;
+}
+.top-banner .img {
+  position: relative;
+}
+.top-banner .img img {
+  width: 100%;
+  height: 100%;
 }
 .top-banner .title {
   display: flex;
   gap: 16px;
   align-items: center;
+  min-width: 412px;
 }
 .top-banner .title .rectangle {
   width: 12px;
   height: 92px;
   background: rgb(241, 109, 127);
-}
-.top-banner .title .img {
-  width: auto;
 }
 .top-banner .title .text .text_main {
   font-size: 48px;
@@ -81,6 +90,32 @@ a {
   padding-right: calc(50% - 632.5px);
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .top-banner {
+    height: 368px;
+    gap: 40px;
+  }
+  .top-banner .img img {
+    width: 384px;
+    height: 369px;
+  }
+  .top-banner .title {
+    width: 316px;
+  }
+  .top-banner .title .text .text_main {
+    font-size: 44px;
+    font-weight: 900;
+  }
+  .top-banner .title .text .text_black {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .top-banner .title .text .text_red {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(241, 109, 127);
+  }
+}
 .catalog-banners {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -125,6 +160,11 @@ a {
   object-position: bottom;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .catalog-banners {
+    margin: 20px 0 155px;
+  }
+}
 .see_all {
   padding-top: 48px;
 }
@@ -175,8 +215,9 @@ a {
 }
 .fetured-items .banners {
   display: grid;
-  grid-gap: 25px 30px;
+  grid-gap: 30px;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 .fetured-items .banners .banner .img1 {
   background: url("../img/banner1.png");
@@ -257,6 +298,13 @@ a {
   text-align: left;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .fetured-items .banners {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 16px;
+  }
+}
 .plus {
   background: rgb(34, 34, 34);
   height: 341px;
@@ -266,10 +314,11 @@ a {
   align-items: center;
   justify-content: center;
   gap: 30px;
+  padding: 104px 0;
 }
 .plus .content .block {
-  margin: 104px 0;
   width: 360px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -278,7 +327,7 @@ a {
   color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: 400;
-  margin: 25px 0 16px;
+  margin: 19px 0 16px;
 }
 .plus .content .block .subtitle {
   color: rgb(255, 255, 255);
@@ -286,18 +335,30 @@ a {
   font-weight: 300;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .plus {
+    height: auto;
+  }
+  .plus .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 0 64px;
+    gap: 48px;
+  }
+}
 .reviews-and-subscribe {
   height: 448px;
   background: rgb(240, 240, 240) url("../img/footer-back.png") no-repeat;
   display: flex;
   justify-content: center;
+  padding-top: 97px;
 }
 .reviews-and-subscribe .reviews {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 359px;
-  margin-top: 97px;
   gap: 30px;
 }
 .reviews-and-subscribe .reviews .text {
@@ -311,7 +372,7 @@ a {
   flex-direction: column;
   align-items: center;
   width: 557px;
-  margin-top: 150px;
+  margin-top: 53px;
   line-height: 167%;
 }
 .reviews-and-subscribe .subscribe .title {
@@ -358,6 +419,21 @@ a {
   text-align: center;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .reviews-and-subscribe {
+    height: 693px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 53px;
+    padding-bottom: 140px;
+    background-position: left bottom;
+  }
+  .reviews-and-subscribe .subscribe {
+    margin-top: 48px;
+    width: 359px;
+  }
+}
 .main-foot {
   height: 79px;
   background: rgb(34, 34, 34);

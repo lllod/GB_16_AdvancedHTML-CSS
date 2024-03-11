@@ -45,3 +45,9 @@
     }
   }
 }
+
+@media(min-width: 768px) and (max-width: 1024px) {
+  .catalog-banners {
+    margin: 20px 0 155px;
+  }
+}

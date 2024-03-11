@@ -2,24 +2,27 @@
 @import "mixins";
 
 .top-banner {
-  height: 764px;
   background: rgb(241, 228, 230);
   @include flex-center;
-  justify-content: space-between;
-  gap: 60px;
+  gap: 64px;
+
+  .img {
+    position: relative;
+
+    img {
+      @include width-height(100%, 100%);
+    }
+  }
 
   .title {
     display: flex;
     gap: 16px;
     align-items: center;
+    min-width: 412px;
 
     .rectangle {
       @include width-height(12px, 92px);
       background: $pinkColorSite;
-    }
-
-    .img {
-      width: auto;
     }
 
     .text {
@@ -42,4 +45,36 @@
 .center-top_banner {
   padding-left: calc(50% - $widthTopBanner / 2);
   padding-right: calc(50% - $widthTopBanner / 2);
+}
+
+@media(min-width: 768px) and (max-width: 1024px) {
+  .top-banner {
+    height: 368px;
+    gap: 40px;
+
+    .img {
+      img {
+        @include width-height(384px, 369px);
+      }
+    }
+
+    .title {
+      width: 316px;
+
+      .text {
+        .text_main {
+          @include font(44px, 900);
+        }
+
+        .text_black {
+          @include font(24px, 700);
+        }
+
+        .text_red {
+          @include font(24px, 700);
+          color: $pinkColorSite;
+        }
+      }
+    }
+  }
 }
