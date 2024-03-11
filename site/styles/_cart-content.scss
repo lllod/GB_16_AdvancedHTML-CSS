@@ -79,6 +79,10 @@
           padding-left: 26px;
           padding-top: 28px;
           @include width-height(18px, 18px);
+
+          button {
+            border: 0 none;
+          }
         }
 
         .card-delete:hover svg path,

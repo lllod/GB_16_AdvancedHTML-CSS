@@ -897,6 +897,9 @@ summary::-webkit-details-marker {
   width: 18px;
   height: 18px;
 }
+.cart-content__cards__cards-list__card .card-delete button {
+  border: 0 none;
+}
 .cart-content__cards__cards-list__card .card-delete:hover svg path,
 .cart-content__cards__cards-list__card .card-delete:hover {
   fill: rgb(241, 109, 127);
@@ -1021,6 +1024,123 @@ summary::-webkit-details-marker {
   background: rgb(241, 109, 127);
   border: 1px solid rgb(241, 109, 127);
   color: rgb(255, 255, 255);
+}
+
+.registration-form {
+  margin-top: 64px;
+  margin-bottom: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 128px;
+}
+.registration-form__form {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.registration-form__fieldset {
+  border: 0 none;
+}
+.registration-form__name-block {
+  margin-bottom: 31px;
+}
+.registration-form__title {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgb(34, 34, 34);
+}
+.registration-form__labels-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+.registration-form__input {
+  width: 100%;
+  height: 45px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(164, 164, 164);
+  font-size: 13px;
+  font-weight: 300;
+  color: rgb(34, 34, 34);
+  padding-left: 17px;
+}
+.registration-form__input::placeholder {
+  color: rgb(177, 177, 177);
+}
+.registration-form__gender-block {
+  margin-bottom: 33px;
+}
+.registration-form__radio-button {
+  display: flex;
+}
+.registration-form__radio-button .text-margin {
+  margin-right: 20px;
+}
+.registration-form__rbtn {
+  appearance: none;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  transition: 0.2s all linear;
+  box-sizing: border-box;
+  border: 1px solid rgb(164, 164, 164);
+  margin-right: 10px;
+}
+.registration-form__rbtn:checked {
+  border: 6px solid rgb(241, 109, 127);
+}
+.registration-form__rbtn-text {
+  font-size: 11px;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+}
+.registration-form__login-block {
+  margin-bottom: 39px;
+}
+.registration-form__text-description {
+  font-size: 13px;
+  font-weight: 300;
+  color: rgb(177, 177, 177);
+}
+.registration-form__btn svg path, .registration-form__btn {
+  padding: 16px 29px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(74, 74, 74);
+  border: 1px solid rgb(164, 164, 164);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  fill: rgb(74, 74, 74);
+}
+.registration-form__btn:hover svg path, .registration-form__btn:hover {
+  background: rgb(241, 109, 127);
+  border: 1px solid rgb(241, 109, 127);
+  color: rgb(255, 255, 255);
+  fill: rgb(255, 255, 255);
+}
+.registration-form__text {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  font-size: 24px;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+  max-width: 652px;
+}
+.registration-form__text-li {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.registration-form__text-li li {
+  list-style-image: url("../img/registration/check.svg");
+  margin-left: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -23,143 +23,93 @@
 <main>
     <div class="breadcrumb center">
         <div class="breadcrumb__title">
-            <p>SHOPPING CART</p>
+            <p>REGISTRATION</p>
         </div>
     </div>
-    <div class="cart-content center">
-        <div class="cart-content__cards">
-            <div class="cart-content__cards__cards-list">
-                <div class="cart-content__cards__cards-list__card">
-                    <div class="card-img">
-                        <img src="./img/cart/img1.jpeg" alt="img1">
+    <div class="registration-form center">
+        <div class="registration-form__form">
+            <form action="" method="get">
+                <fieldset class="registration-form__name-block registration-form__fieldset">
+                    <legend class="registration-form__title">
+                        Your Name
+                    </legend>
+                    <div class="registration-form__labels-block">
+                        <label class="registration-form__label" for="first-name">
+                            <input class="registration-form__input" id="first-name" name="first-name" type="text"
+                                   placeholder="First Name">
+                        </label>
+                        <label class="registration-form__label" for="last-name">
+                            <input class="registration-form__input" id="last-name" name="last-name" type="text"
+                                   placeholder="Last Name">
+                        </label>
                     </div>
-                    <div class="card-data">
-                        <div class="card-data__title">
-                            <p>MANGO PEOPLE <br>T-SHIRT</p>
-                        </div>
-                        <div class="card-data__parameters">
-                            <p>Price: <span class="pink">$300</span></p>
-                            <p>Color: <span class="light-grey">Red</span></p>
-                            <p>Size: <span class="light-grey">XI</span></p>
-                            <form action="" method="get" class="quantity">
-                                <div class="quantity-form">
-                                    <label for="quantity1">Quantity: </label><input class="quantity-input" type="number"
-                                                                                    name="quantity"
-                                                                                    id="quantity1" required/>
-                                </div>
-                            </form>
-                        </div>
+                </fieldset>
+                <fieldset class="registration-form__gender-block registration-form__fieldset">
+                    <div class="registration-form__radio-button">
+                        <input class="registration-form__rbtn" type="radio" id="male" name="gender" value="Male"
+                               checked/>
+                        <label class="registration-form__rbtn-text text-margin" for="male">Male</label>
+                        <input class="registration-form__rbtn" type="radio" id="female" name="gender" value="Female"/>
+                        <label class="registration-form__rbtn-text" for="female">Female</label>
                     </div>
-                    <div class="card-delete">
-                        <form action="" method="get">
-                            <button type="submit">
-                                <svg width="18.000000" height="18.000000" viewBox="0 0 18 18" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs/>
-                                    <path id="Vector"
-                                          d="M11.2454 9L17.5302 2.71521C17.8285 2.41736 17.9962 2.01331 17.9966 1.59192C17.997
-                                  1.17041 17.8299 0.766113 17.5322 0.467773C17.2344 0.169556 16.8304 0.00183105 16.4089
-                                  0.00134277C15.9875 0.000976562 15.5831 0.168091 15.2849 0.46582L9 6.75073L2.71515
-                                  0.46582C2.41687 0.167603 2.01233 0 1.59052 0C1.1687 0 0.764099 0.167603 0.46582
-                                  0.46582C0.167542 0.76416 0 1.1687 0 1.59045C0 2.01233 0.167542 2.41687 0.46582
-                                  2.71521L6.75067 9L0.46582 15.2848C0.167542 15.5831 0 15.9877 0 16.4095C0 16.8313
-                                  0.167542 17.2358 0.46582 17.5342C0.764099 17.8324 1.1687 18 1.59052 18C2.01233 18
-                                  2.41687 17.8324 2.71515 17.5342L9 11.2493L15.2849 17.5342C15.5831 17.8324 15.9877 18
-                                  16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8325 17.2358 18 16.8313 18
-                                  16.4095C18 15.9877 17.8325 15.5831 17.5342 15.2848L11.2454 9Z"
-                                          fill="#575757" fill-opacity="1.000000" fill-rule="nonzero"/>
-                                </svg>
-                            </button>
-                        </form>
+                </fieldset>
+                <fieldset class="registration-form__login-block registration-form__fieldset">
+                    <legend class="registration-form__title">
+                        Login details
+                    </legend>
+                    <div class="registration-form__labels-block">
+                        <label class="registration-form__label" for="email">
+                            <input class="registration-form__input" id="email" name="email" type="email"
+                                   placeholder="Email">
+                        </label>
+                        <label class="registration-form__label" for="password">
+                            <input class="registration-form__input" id="password" name="password" type="password"
+                                   placeholder="Password">
+                        </label>
+                        <p class="registration-form__text-description">Please use 8 or more characters, with at least 1
+                            number and a mixture of uppercase and lowercase letters</p>
                     </div>
-                </div>
-                <div class="cart-content__cards__cards-list__card">
-                    <div class="card-img">
-                        <img src="./img/cart/img2.jpeg" alt="img2">
-                    </div>
-                    <div class="card-data">
-                        <div class="card-data__title">
-                            <p>MANGO PEOPLE <br>T-SHIRT</p>
-                        </div>
-                        <div class="card-data__parameters">
-                            <p>Price: <span class="pink">$300</span></p>
-                            <p>Color: <span class="light-grey">Red</span></p>
-                            <p>Size: <span class="light-grey">XI</span></p>
-                            <form action="" method="get" class="quantity">
-                                <div class="quantity-form">
-                                    <label for="quantity2">Quantity: </label><input class="quantity-input" type="number"
-                                                                                    name="quantity"
-                                                                                    id="quantity2" required/>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="card-delete">
-                        <form action="" method="get">
-                            <button type="submit">
-                                <svg width="18.000000" height="18.000000" viewBox="0 0 18 18" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs/>
-                                    <path id="Vector"
-                                          d="M11.2454 9L17.5302 2.71521C17.8285 2.41736 17.9962 2.01331 17.9966 1.59192C17.997
-                                  1.17041 17.8299 0.766113 17.5322 0.467773C17.2344 0.169556 16.8304 0.00183105 16.4089
-                                  0.00134277C15.9875 0.000976562 15.5831 0.168091 15.2849 0.46582L9 6.75073L2.71515
-                                  0.46582C2.41687 0.167603 2.01233 0 1.59052 0C1.1687 0 0.764099 0.167603 0.46582
-                                  0.46582C0.167542 0.76416 0 1.1687 0 1.59045C0 2.01233 0.167542 2.41687 0.46582
-                                  2.71521L6.75067 9L0.46582 15.2848C0.167542 15.5831 0 15.9877 0 16.4095C0 16.8313
-                                  0.167542 17.2358 0.46582 17.5342C0.764099 17.8324 1.1687 18 1.59052 18C2.01233 18
-                                  2.41687 17.8324 2.71515 17.5342L9 11.2493L15.2849 17.5342C15.5831 17.8324 15.9877 18
-                                  16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8325 17.2358 18 16.8313 18
-                                  16.4095C18 15.9877 17.8325 15.5831 17.5342 15.2848L11.2454 9Z"
-                                          fill="#575757" fill-opacity="1.000000" fill-rule="nonzero"/>
-                                </svg>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="cart-content__cards__cards-nav">
-                <button class="btn" type="button"><span class="btn__text">CLEAR SHOPPING CART</span></button>
-                <button class="btn" type="button"><span class="btn__text">CONTINUE SHOPPING</span></button>
-            </div>
+                </fieldset>
+                <button class="registration-form__btn" type="submit">
+                    <p>JOIN NOW</p>
+                    <svg width="17.000977" height="9.918610" viewBox="0 0 17.001 9.91861" fill="none"
+                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs/>
+                        <path id="Vector"
+                              d="M11.54 0.208099C11.6058 0.14212 11.684 0.0897827 11.77 0.0540771C11.8561 0.0183716
+                              11.9484 0 12.0415 0C12.1346 0 12.2269 0.0183716 12.313 0.0540771C12.399 0.0897827 12.4772
+                              0.14212 12.543 0.208099L16.7928 4.45801C16.8589 4.5238 16.9111 4.60196 16.9469
+                              4.68802C16.9825 4.77408 17.001 4.86633 17.001 4.9595C17.001 5.05267 16.9825 5.1449 16.9469
+                              5.23096C16.9111 5.31702 16.8589 5.39517 16.7928 5.46097L12.543 9.71088C12.41 9.8439
+                              12.2296 9.91861 12.0415 9.91861C11.8534 9.91861 11.673 9.8439 11.54 9.71088C11.407 9.57788
+                              11.3323 9.39749 11.3323 9.20941C11.3323 9.0213 11.407 8.84091 11.54 8.70792L15.2898
+                              4.9595L11.54 1.21106C11.474 1.14526 11.4218 1.06711 11.386 0.981049C11.3503 0.89502
+                              11.3319 0.802765 11.3319 0.709595C11.3319 0.616425 11.3503 0.52417 11.386 0.43811C11.4218
+                              0.352051 11.474 0.273895 11.54 0.208099Z"
+                              fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                        <path id="Vector"
+                              d="M0 4.95947C0 4.77161 0.074585 4.59146 0.20752 4.45862C0.340332 4.32578 0.520508 4.25116
+                              0.708374 4.25116L15.583 4.25116C15.7709 4.25116 15.951 4.32578 16.0839 4.45862C16.2167
+                              4.59146 16.2913 4.77161 16.2913 4.95947C16.2913 5.14734 16.2167 5.32748 16.0839
+                              5.46033C15.951 5.59317 15.7709 5.66779 15.583 5.66779L0.708374 5.66779C0.520508 5.66779
+                              0.340332 5.59317 0.20752 5.46033C0.074585 5.32748 0 5.14734 0 4.95947Z"
+                              fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                    </svg>
+
+                </button>
+            </form>
         </div>
-        <div class="cart-content__forms">
-            <div class="cart-content__forms__address-form">
-                <form action="" method="get">
-                    <fieldset class="delivery-address">
-                        <legend class="cart-content__forms__address-form__title">
-                            SHIPPING ADDRESS
-                        </legend>
-                        <div class="delivery-address__labels">
-                            <label class="delivery-label" for="city">
-                                <input class="delivery-input" id="city" name="city" type="text" placeholder="City">
-                            </label>
-                            <label class="delivery-label" for="state">
-                                <input class="delivery-input" id="state" name="state" type="text" placeholder="State">
-                            </label>
-                            <label class="delivery-label" for="postcode">
-                                <input class="delivery-input" id="postcode" name="postcode" type="number"
-                                       placeholder="Postcode/Zip">
-                            </label>
-                        </div>
-                        <button class="delivery-btn" type="submit">GET A QUOTE</button>
-                    </fieldset>
-                </form>
-            </div>
-            <div class="cart-content__forms__total-info">
-                <div class="cart-content__forms__total-info__sub-text">
-                    <p class="text">SUB TOTAL</p>
-                    <p class="price">$900</p>
-                </div>
-                <div class="cart-content__forms__total-info__grand-text">
-                    <p class="text">GRAND TOTAL</p>
-                    <p class="price">$900</p>
-                </div>
-                <div class="cart-content__forms__total-info__line"></div>
-                <form action="" method="get" class="cart-content__forms__total-info__form">
-                    <button class="btn" type="submit">PROCEED TO CHECKOUT</button>
-                </form>
-            </div>
+        <div class="registration-form__text">
+            <p class="registration-form__text-title">LOYALTY HAS ITS PERKS</p>
+            <p class="registration-form__text-p">Get in on the loyalty program where you can earn points and unlock
+                serious perks. Starting with these as soon as you join:</p>
+            <ul class="registration-form__text-li">
+                <li>15% off welcome offer</li>
+                <li>Free shipping, returns and exchanges on all orders</li>
+                <li>$10 off a purchase on your birthday</li>
+                <li>Early access to products</li>
+                <li>Exclusive offers & rewards</li>
+            </ul>
         </div>
     </div>
     <div class="reviews-and-subscribe">
@@ -281,5 +231,3 @@
 </footer>
 </body>
 </html>
-
-
