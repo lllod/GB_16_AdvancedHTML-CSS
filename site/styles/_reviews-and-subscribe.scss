@@ -38,28 +38,31 @@
     }
 
     .form {
-      display: flex;
+      &__email-enter {
+        display: flex;
+      }
     }
 
-    .subscribe__email {
+    &__email {
       background: $whiteColorSite;
       @include width-height(256px, 49px);
       border: 0;
       border-radius: 8% 0 0 8% / 50%;
-    }
-
-    .subscribe__email::placeholder {
-      color: $darkColorSite;
-      @include font(14px, 400);
-      opacity: 0.67;
       padding-left: 22px;
     }
 
-    .subscribe__btn {
+    &__email::placeholder {
+      color: $darkColorSite;
+      @include font(14px, 400);
+      opacity: 0.67;
+    }
+
+    &__btn {
       @include width-height(100px, 49px);
       background: $pinkColorSite;
       border-radius: 0 20% 20% 0 / 50% 50%;
       @include flex-center;
+      border: 0 solid $pinkColorSite;
 
       .text {
         color: $whiteColorSite;
@@ -72,11 +75,12 @@
 
 @media(min-width: 768px) and (max-width: 1024px) {
   .reviews-and-subscribe {
-    height: 693px;
+    height: 614px;
     @include flex-center-column;
     padding-top: 53px;
     padding-bottom: 140px;
     background-position: left bottom;
+    justify-content: flex-start;
 
     .subscribe {
       margin-top: 48px;

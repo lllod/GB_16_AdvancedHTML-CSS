@@ -34,10 +34,6 @@
     margin-top: 20px;
   }
 
-  &__label {
-
-  }
-
   &__input {
     @include width-height(100%, 45px);
     background: $whiteColorSite;
@@ -119,9 +115,25 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+
     li {
       list-style-image: url("../img/registration/check.svg");
       margin-left: 30px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .registration-form {
+    gap: 22px;
+
+    &__text {
+      max-width: 354px;
+          @include font(16px, 300);
+    }
+
+    &__text-title {
+      margin-bottom: 10px;
     }
   }
 }

@@ -10,6 +10,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+
 
   .left_icons {
     display: flex;
@@ -25,5 +28,38 @@
     display: flex;
     gap: 33px;
     align-items: flex-end;
+
+
+    &__burger-menu {
+
+      .burger-nav {
+        background: $whiteColorSite;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, .21);
+        width: 232px;
+        padding: 32px;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        transition: right 0.3s;
+      }
+
+      #burger {
+        position: absolute;
+        left: -999999999px;
+        visibility: hidden;
+
+        &:checked ~ .burger-nav {
+          right: -232px;
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-head {
+    justify-content: center;
+    gap: 424px;
   }
 }

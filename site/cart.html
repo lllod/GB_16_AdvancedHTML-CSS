@@ -9,15 +9,26 @@
 <body>
 <header class="main-head center">
     <div class="left_icons">
-        <a href="#"><img class="logo" src="./img/logo.svg" alt="logo"></a>
+        <a href="index.html"><img class="logo" src="./img/logo.svg" alt="logo"></a>
         <a href="#"><img class="search" src="./img/search.svg" alt="search"></a>
     </div>
     <div class="right_icons">
-        <nav>
-            <a href="#"><img class="menu" src="./img/s-menu.svg" alt="menu"></a>
-        </nav>
-        <a href="#"><img class="user_pic" src="./img/user-pic.svg" alt="user-pic"></a>
-        <a href="#"><img class="cart" src="./img/cart.svg" alt="cart"></a>
+        <div class="right_icons__burger-menu">
+            <input id="burger" type="checkbox">
+            <label for="burger">
+                <img class="menu" src="./img/s-menu.svg" alt="menu">
+            </label>
+            <nav class="burger-nav">
+                <ul>
+                    <li><a href="">link</a></li>
+                    <li><a href="">link</a></li>
+                    <li><a href="">link</a></li>
+                    <li><a href="">link</a></li>
+                </ul>
+            </nav>
+        </div>
+        <a href="registration.html"><img class="user_pic" src="./img/user-pic.svg" alt="user-pic"></a>
+        <a href="cart.html"><img class="cart" src="./img/cart.svg" alt="cart"></a>
     </div>
 </header>
 <main>
@@ -179,10 +190,14 @@
                 <p>FOR OUR NEWLETTER AND PROMOTION</p>
             </div>
             <div class="form">
-                <label>
-                    <input type="email" class="subscribe__email" placeholder="Enter Your Email">
-                </label>
-                <div class="subscribe__btn"><label class="text">Subscribe</label></div>
+                <form class="form__email-enter" action="" method="get">
+                    <label for="subscribe-email">
+                        <input id="subscribe-email" name="subscribe-email" type="email" class="subscribe__email"
+                               placeholder="Enter Your Email">
+                    </label>
+                    <button class="subscribe__btn" type="submit"><p class="text">Subscribe</p></button>
+                    <!--                <div class="subscribe__btn"><label class="text">Subscribe</label></div>-->
+                </form>
             </div>
         </div>
     </div>

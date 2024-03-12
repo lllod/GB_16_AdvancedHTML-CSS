@@ -27,11 +27,12 @@ summary::-webkit-details-marker {
     &__content {
       padding: 0 16px 16px;
       background-color: $whiteColorSite;
+      box-shadow: 6px 4px 35px rgba(0, 0, 0, .21);
     }
 
     &[open] {
       background: $whiteColorSite;
-      box-shadow: 6px 4px 35px rgba(0, 0, 0, .21);
+
     }
 
     &[open] .filter__top-heading {

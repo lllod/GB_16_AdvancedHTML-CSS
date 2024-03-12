@@ -2,13 +2,13 @@
 @import "mixins";
 
 .catalog-products {
-  @include flex-center-column;
   margin-bottom: 48px;
 
   .products {
     display: grid;
     grid-gap: 25px 30px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    justify-content: center;
 
     .product {
       .img1 {
@@ -99,4 +99,19 @@
       }
     }
   }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .catalog-products {
+    margin-bottom: 40px;
+    .products {
+      grid-gap: 16px;
+
+      .product:last-child {
+        display: none;
+      }
+    }
+
+  }
+
 }

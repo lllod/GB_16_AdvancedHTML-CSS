@@ -11,6 +11,7 @@
   @include width-height(1140px, 601px);
   position: relative;
   top: -65px;
+  background: $whiteColorSite;
 
   &__content {
     padding-top: 65px;
@@ -34,7 +35,7 @@
     &__title {
       @include font(18px, 300);
       color: rgb(77, 77, 77);
-      padding-top: 12px;
+      margin-top: 12px;
     }
 
     &__description {
@@ -42,24 +43,31 @@
       color: $greyColorSite;
       width: 555px;
       text-align: center;
-      padding-top: 48px;
+      margin-top: 48px;
     }
 
     &__cost {
-      padding-top: 32px;
+      margin-top: 32px;
       @include font(24px, 300);
       color: $pinkColorSite;
     }
 
+    &__line {
+      margin-top: 65px;
+      border: 1px solid rgb(234, 234, 234);
+      width: 641px;
+    }
+
     &__select {
+      margin-top: 65px;
       @include flex-center;
       gap: 23px;
-      padding-bottom: 48px;
+      margin-bottom: 48px;
 
       &__item {
         @include font(14px, 400);
         color: $greyColorSite;
-        padding-top: 130px;
+        //margin-top: 65px;
       }
     }
 
@@ -83,5 +91,18 @@
       fill: $whiteColorSite;
       color: $whiteColorSite;
     }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .product-center {
+    margin-left: calc(50% - $widthMiddleSite / 2);
+    margin-right: calc(50% - $widthMiddleSite / 2);
+  }
+
+  .product-info {
+    width: 766px;
+    top: 0;
+    left: -15px;
   }
 }

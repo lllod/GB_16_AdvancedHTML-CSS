@@ -222,3 +222,25 @@
     }
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cart-content {
+    padding-top: 59px;
+    @include flex-center-column;
+    gap: 64px;
+    margin-bottom: 128px;
+
+    &__cards {
+      gap: 62px;
+    }
+
+    &__forms {
+      @include flex-center;
+      gap: 15px;
+
+      &__total-info {
+        margin-top: 0;
+      }
+    }
+  }
+}

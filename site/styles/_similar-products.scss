@@ -4,9 +4,11 @@
 .similar-products {
   display: grid;
   grid-gap: 25px;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding-top: 64px;
-  padding-bottom: 128px;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  margin-top: 64px;
+  margin-bottom: 128px;
+  background: $whiteColorSite;
+  justify-content: center;
 
   &__content {
     @include flex-center-column;
@@ -33,6 +35,17 @@
         @include font(16px, 400);
         text-align: left;
       }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .similar-products {
+    margin-top: 129px;
+    grid-gap: 16px;
+
+    &__content:last-child {
+      display: none;
     }
   }
 }
