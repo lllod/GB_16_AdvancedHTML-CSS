@@ -129,7 +129,28 @@
 
     &__text {
       max-width: 354px;
-          @include font(16px, 300);
+      @include font(16px, 300);
+    }
+
+    &__text-title {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .registration-form {
+    @include flex-center-column;
+    gap: 40px;
+    margin: 0 8px 0 8px;
+
+    &__form {
+      width: 358px;
+    }
+
+    &__text {
+      max-width: 354px;
+      @include font(16px, 300);
     }
 
     &__text-title {

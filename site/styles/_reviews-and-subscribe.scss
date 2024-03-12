@@ -88,3 +88,41 @@
     }
   }
 }
+
+@media(max-width: 767px) {
+  .reviews-and-subscribe {
+    height: 550px;
+    @include flex-center-column;
+    padding-top: 53px;
+    padding-bottom: 110px;
+    background-position: left bottom;
+    justify-content: flex-start;
+
+    .reviews {
+      width: 341px;
+
+      .text {
+        @include font(18px, 400);
+      }
+    }
+
+    .subscribe {
+      margin-top: 59px;
+      width: 341px;
+
+      .sub-title {
+        @include font(14px, 400);
+        margin-bottom: 22px;
+      }
+
+      &__email {
+        @include width-height(246px, 47px);
+        padding-left: 21px;
+      }
+
+      &__btn {
+        @include width-height(95px, 47px);
+      }
+    }
+  }
+}

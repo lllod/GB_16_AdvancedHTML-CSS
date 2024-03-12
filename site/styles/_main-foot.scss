@@ -36,3 +36,20 @@
     gap: 305px;
   }
 }
+
+@media (max-width: 767px) {
+  .main-foot {
+    height: 143px;
+    @include flex-center-column;
+    flex-direction: column-reverse;
+    gap: 25px;
+
+    &__copirate {
+      margin-bottom: 24px;
+    }
+
+    &__soc-icons {
+      margin-top: 43px;
+    }
+  }
+}

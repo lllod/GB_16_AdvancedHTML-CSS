@@ -63,3 +63,19 @@
     gap: 424px;
   }
 }
+
+@media (max-width: 767px) {
+  .main-head {
+    gap: 200px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    .right_icons {
+      .hidden-icon {
+        position: absolute;
+        left: -99999999px;
+        visibility: hidden;
+      }
+    }
+  }
+}
