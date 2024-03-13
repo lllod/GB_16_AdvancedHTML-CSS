@@ -49,3 +49,15 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .similar-products {
+    margin-bottom: 64px;
+    grid-gap: 20px;
+
+    &__content:last-child {
+      display: none;
+    }
+  }
+
+}

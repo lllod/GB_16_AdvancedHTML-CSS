@@ -106,3 +106,33 @@
     left: -15px;
   }
 }
+
+@media (max-width: 767px) {
+  .product-info {
+    width: 375px;
+    top: 0;
+    left: 382px;
+
+    &__content {
+      &__description {
+        width: 326px;
+        margin-top: 32px;
+      }
+
+      &__line {
+        margin-top: 32px;
+        width: 174px;
+      }
+
+      &__select {
+        margin-top: 49px;
+        margin-bottom: 64px;
+
+        &__item {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+}

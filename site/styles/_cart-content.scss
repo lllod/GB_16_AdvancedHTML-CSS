@@ -95,6 +95,7 @@
 
           button {
             border: 0 none;
+            background: none;
           }
         }
 
@@ -346,112 +347,21 @@
       }
     }
 
-    //&__forms {
-    //  padding-top: 17px;
-    //
-    //  &__address-form {
-    //    @include width-height(360px, 272px);
-    //
-    //    .delivery-address {
-    //      border: 0 none;
-    //
-    //      .delivery-address__labels {
-    //        padding-top: 20px;
-    //        padding-bottom: 23px;
-    //        display: flex;
-    //        flex-direction: column;
-    //        gap: 20px;
-    //
-    //        .delivery-input {
-    //          @include width-height(100%, 45px);
-    //          background: $whiteColorSite;
-    //          border: 1px solid $greyFormBorder;
-    //          @include font(13px, 300);
-    //          color: $darkColorSite;
-    //          padding-left: 17px;
-    //        }
-    //
-    //        .delivery-input::placeholder {
-    //          color: $greyFontColors;
-    //        }
-    //      }
-    //
-    //      .delivery-btn {
-    //        padding: 10px 14px 12px 15px;
-    //        @include font(11px, 300);
-    //        color: rgb(74, 74, 74);
-    //        border: 1px solid $greyFormBorder;
-    //      }
-    //
-    //      .delivery-btn:hover {
-    //        @include btn_hover;
-    //      }
-    //    }
-    //
-    //
-    //    &__title {
-    //      @include font(16px, 300);
-    //      color: $darkColorSite;
-    //    }
-    //  }
-    //
-    //  &__total-info {
-    //    margin-top: 57px;
-    //    padding-top: 39px;
-    //    background: rgb(245, 243, 243);
-    //    display: flex;
-    //    flex-direction: column;
-    //
-    //    &__sub-text {
-    //      display: flex;
-    //      justify-content: flex-end;
-    //      padding-right: 34px;
-    //      gap: 25px;
-    //      @include font(11px, 400);
-    //      color: rgb(74, 74, 74);
-    //    }
-    //
-    //    &__grand-text {
-    //      display: flex;
-    //      justify-content: flex-end;
-    //      padding-right: 37px;
-    //      gap: 25px;
-    //      padding-top: 12px;
-    //
-    //      .text {
-    //        @include font(16px, 300);
-    //        color: $darkColorSite;
-    //      }
-    //
-    //      .price {
-    //        @include font(16px, 700);
-    //        color: $pinkColorSite;
-    //      }
-    //
-    //    }
-    //
-    //    &__line {
-    //      background: rgb(226, 226, 226);
-    //      @include width-height(275px, 1px);
-    //      margin: 21px 42px 17px 43px;
-    //    }
-    //
-    //    &__form {
-    //      margin-left: 44px;
-    //      margin-bottom: 42px;
-    //
-    //      .btn {
-    //        @include font(16px, 300);
-    //        color: rgb(0, 0, 0);
-    //        border: 1px solid $greyFormBorder;
-    //        padding: 15px 43px 16px 41px;
-    //      }
-    //
-    //      .btn:hover {
-    //        @include btn_hover;
-    //      }
-    //    }
-    //  }
-    //}
+    &__forms {
+      padding-top: 0;
+
+      &__address-form {
+        .delivery-address {
+          .delivery-btn {
+            font-weight: 400;
+          }
+        }
+      }
+
+      &__total-info {
+        margin-top: 48px;
+        padding-top: 0;
+      }
+    }
   }
 }

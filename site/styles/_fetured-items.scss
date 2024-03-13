@@ -29,6 +29,7 @@
     grid-gap: 30px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
 
     .banner {
       .img1 {
@@ -84,7 +85,8 @@
     }
 
     .text {
-      padding: 24px 29px 0 16px;
+      margin: 24px 29px 0 16px;
+      width: 313px;
 
       .title {
         @include font(13px, 400);
@@ -108,11 +110,24 @@
   }
 }
 
-@media(min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .fetured-items {
     .banners {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 1fr);
+      grid-gap: 16px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .fetured-items {
+    .text {
+      padding-bottom: 64px;
+    }
+
+    .banners {
+      grid-template-columns: repeat(1, 1fr);
       grid-gap: 16px;
     }
   }

@@ -1,4 +1,5 @@
 @import "vars";
+@import "mixins";
 
 .main-head {
   height: 75px;
@@ -11,7 +12,6 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  overflow: hidden;
 
 
   .left_icons {
@@ -26,7 +26,7 @@
 
   .right_icons {
     display: flex;
-    gap: 33px;
+    gap: 25px;
     align-items: flex-end;
 
 
@@ -39,8 +39,47 @@
         padding: 32px;
         position: absolute;
         top: 75px;
-        right: 0;
+        right: -232px;
         transition: right 0.3s;
+
+        &__title {
+          @include font(14px, 700);
+          line-height: 17px;
+          color: rgb(0, 0, 0);
+        }
+
+        &__sub-title {
+          padding-top: 20px;
+          padding-bottom: 12px;
+          @include font(14px, 700);
+          line-height: 17px;
+          color: $pinkColorSite;
+        }
+
+        &__li {
+          list-style-type: none;
+          margin-left: 21px;
+          @include font(14px, 700);
+          line-height: 25px;
+          color: $greyColorDropdownMenu;
+        }
+
+        &__delete {
+          @include width-height(12px, 12px);
+          top: 16px;
+          left: 200px;
+          position: absolute;
+        }
+
+        &__delete:hover svg path,
+        &__delete:hover {
+          fill: $pinkColorSite;
+        }
+
+        &__btn {
+          border: 0 none;
+          background: none;
+        }
       }
 
       #burger {
@@ -49,9 +88,15 @@
         visibility: hidden;
 
         &:checked ~ .burger-nav {
-          right: -232px;
+          right: 0;
         }
       }
+
+    }
+
+    &__menu-icons {
+      display: flex;
+      gap: 25px;
     }
   }
 
@@ -71,6 +116,9 @@
     padding-right: 16px;
 
     .right_icons {
+      gap: 0;
+      margin-right: -20px;
+
       .hidden-icon {
         position: absolute;
         left: -99999999px;

@@ -15,6 +15,7 @@
       @include width-height(47px, 47px);
       @include flex-center;
       background: $sliderColor;
+
     }
 
     &__prev:hover svg path,
@@ -41,6 +42,35 @@
 
     &__carousel {
       padding-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .slider {
+    height: 624px;
+
+    &__carousel {
+      justify-content: center;
+      position: relative;
+      padding-top: 85px;
+
+      &__prev {
+        position: absolute;
+        left: 0;
+      }
+
+      &__img {
+
+        img {
+          @include width-height(374px, 454px);
+        }
+      }
+
+      &__next {
+        position: absolute;
+        right: 0;
+      }
     }
   }
 }

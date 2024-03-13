@@ -9,6 +9,7 @@
     grid-gap: 25px 30px;
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     justify-content: center;
+    justify-items: center;
 
     .product {
       .img1 {
@@ -77,6 +78,7 @@
 
     .text {
       padding: 24px 29px 0 16px;
+      width: 360px;
 
       .title {
         @include font(13px, 400);
@@ -104,6 +106,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .catalog-products {
     margin-bottom: 40px;
+
     .products {
       grid-gap: 16px;
 
@@ -111,7 +114,25 @@
         display: none;
       }
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .catalog-products {
+    margin-bottom: 40px;
+
+    .products {
+      grid-gap: 16px;
+
+      .product:last-child {
+        display: none;
+      }
+
+      .text {
+
+      }
+    }
+
 
   }
-
 }

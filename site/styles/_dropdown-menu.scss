@@ -128,3 +128,61 @@ summary::-webkit-details-marker {
 
   }
 }
+
+@media (max-width: 767px) {
+  .dropdown-menu {
+    gap: 61px;
+    padding-top: 24px;
+    height: auto;
+    padding-bottom: 32px;
+    justify-content: space-around;
+
+    .filter {
+      width: 45px;
+
+      /*
+      Второй вариант реализации. Полное скрытие выпадающего меню
+      TRENDING NOW | SIZE | PRICE
+       */
+      //&[open] ~ .center-menu {
+      //  display: none;
+      //}
+
+      &__text {
+        padding-left: 8px;
+      }
+
+      &__text svg {
+        @include width-height(37px, 25px);
+      }
+
+      &__content {
+        width: 322px;
+        top: 13px;
+        left: 53px;
+        position: absolute;
+        // При втором варианте реализации выпадающее меню &__content
+        // растягивает на всю ширину экрана и располагается под SVG
+      }
+
+      &__top-heading {
+        display: none;
+      }
+
+
+    }
+
+    .center-menu {
+      gap: 24px;
+      padding-right: 8px;
+
+      &__heading {
+        @include font(12px, 400);
+      }
+
+      &__text {
+        gap: 7px;
+      }
+    }
+  }
+}

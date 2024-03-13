@@ -27,6 +27,8 @@
 
 @media (max-width: 767px) {
   .breadcrumb {
+    flex-direction: column;
     justify-content: center;
+    gap: 32px;
   }
 }
