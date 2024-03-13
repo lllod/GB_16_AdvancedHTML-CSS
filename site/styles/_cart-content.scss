@@ -29,10 +29,6 @@
           .img-big {
             @include width-height(262px, 100%);
           }
-
-          .img-small {
-            display: none;
-          }
         }
 
         .card-data {
@@ -87,10 +83,6 @@
           .delete-icon-big {
             margin-left: 26px;
             margin-top: 28px;
-          }
-
-          .delete-icon-small {
-            display: none;
           }
 
           button {
@@ -278,11 +270,6 @@
 
           .card-img {
             .img-big {
-              display: none;
-            }
-
-            .img-small {
-              display: block;
               @include width-height(143px, 188px);
             }
           }
@@ -314,18 +301,14 @@
             }
           }
 
+          .card-delete svg {
+            @include width-height(10px, 11px);
+          }
+
           .card-delete {
             @include width-height(10px, 11px);
-
-            .delete-icon-big {
-              display: none;
-            }
-
-            .delete-icon-small {
-              display: block;
-              margin-top: 17px;
-              margin-left: 12px;
-            }
+            margin-top: -10px;
+            margin-left: -12px;
 
             button {
               border: 0 none;
